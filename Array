@@ -107,3 +107,138 @@ public class Multidimensi1 {
         }
     }
 }
+
+//Multi Dimensi 2
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package latihanpraktikumarray;
+
+/**
+ *
+ * @author diaha
+ */
+public class MultiDimensi2 {
+
+    public static void main(String[] args) {
+        String n= "Identitas Siswa Angkatan 24";
+        int nis[][] = {{210651}, {210562}, {210563}};
+        String[][] nama = {{"Ade"}, {"Galih"}, {"Baihaqi"}};
+        System.out.println(n);
+        {
+            for (int i = 0; i <nama.length; i++) {
+                for (int j = 0; j <nis[0].length; j++) {
+                   System.out.print(nis[i][j] + "\t"); 
+                   System.out.println(nama[i][j] + "\t\n");
+                    
+
+                }
+            }
+        }
+    }
+}
+
+//MultiDimensi3
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package latihanpraktikumarray;
+
+/**
+ *
+ * @author diaha
+ */
+public class MultiDimensi3 {
+
+    public static void main(String[] args) {
+        double[][][] nilai = {
+            {{51, 89}, {60, 59}, {52, 47}},
+            {{39, 58}, {71, 85}, {39, 78}},
+            {{81, 32}, {51, 86}, {59, 31}}};
+
+        System.out.println("Array nilai ditampilkan: ");
+        for (int i = 0; i < nilai.length; i++) {
+            for (int j = 0; j < nilai[0].length; j++) {
+                for (int k = 0; k < nilai[0][0].length; k++) {
+                    System.out.print("nilai[" + i + "][" + j + "][" + k + "] = " + nilai[i][j][k] + "\t");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+        System.out.println("Nilai rata-rata siswa: \n");
+        for (int i = 0; i < nilai.length; i++) {
+            double totalNilaiPilihanGanda = 0, totalNilaiEssay = 0;
+            for (int j = 0; j < nilai[0].length; j++) {
+                totalNilaiPilihanGanda += nilai[i][j][0];
+                totalNilaiEssay += nilai[i][j][1];
+            }
+
+            double pilihanGanda = totalNilaiPilihanGanda / nilai[0].length;
+            double essay = totalNilaiEssay / nilai[0].length;
+            System.out.printf("Nilai rata-rata ujian soal pilihan ganda siswa " + (i + 1) + " adalah %4.2f \n", pilihanGanda);
+            System.out.printf("Nilai rata-rata ujian soal essay siswa " + (i + 1) + " adalah %4.2f \n", essay);
+            System.out.println();
+        }
+    }
+}
+
+//Praktikum 1
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tugaspraktikumarray;
+
+/**
+ *
+ * @author diaha
+ */
+public class Praktikum1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int bilangan[] = new int[5];
+        bilangan[0] = 1;
+        bilangan[1] = 2;
+        bilangan[2] = 3;
+        bilangan[3] = 4;
+        bilangan[4] = 5;
+
+        System.out.println(bilangan[4]);
+
+    }
+
+}
+
+//Praktikum 2
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tugaspraktikumarray;
+
+/**
+ *
+ * @author diaha
+ */
+public class Praktikum2 {
+
+    public static void main(String[] args) {
+        int[] bilangan = {1, 2, 3, 4, 5, 6, 7, 8};
+        for (int i = 0; i < bilangan.length; i++) {
+            System.out.println("Bilangan pada indeks " +i+ ": " + bilangan[i]);
+
+        }
+   
+    }
+}
